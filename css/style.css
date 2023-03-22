@@ -1,0 +1,197 @@
+
+/*navbar*/
+nav{
+	background:transparent;
+	display: flex;
+	padding: 1.6rem;
+	width: 100%;
+	justify-content:space-between;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: 7vh;
+	position: absolute;
+	transition: all 1.5s ease;
+}
+.save{
+	background: transparent;
+	height: 70vh;
+}
+.brand a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 2rem;
+	
+}
+.toggle i{
+	color:whitesmoke;
+	font-size: 2rem;
+	display: none;
+}
+ .menu{
+	margin: 0px;
+	display: flex;
+	list-style: none;
+}
+.menu li a{
+	font-size: 2rem;
+	text-decoration: none;
+	color:whitesmoke;
+	margin: 30px;     
+}
+.icon i{
+		color: whitesmoke;
+	font-size: 2rem;
+	cursor: pointer;
+}
+/*End of Navbar*/
+
+
+
+/*Header Section*/
+#header{
+	display: flex;
+	align-items: flex-end;
+	height: 768px;
+	justify-content: center;
+	background-image: url("../img/A.PNG");
+	background-position: bottom;
+	background-size: cover;
+}
+.header-contents{
+	margin-bottom: 150px;
+	text-align: center;
+}
+.header-contents h3{
+	font-size: 4vmin;
+	color: whitesmoke;
+}
+#line{
+	background: red;
+	height: 3px;
+	width: 150px;
+	margin: auto;
+}
+.header-contents h1{
+	font-size: 5vmin;
+	color: whitesmoke;
+}
+/*End of Header Section*/
+
+
+/*About Section*/
+#about{
+	padding: 160px 40px 40px 40px;
+	height: 768px;
+	background: #eef ;
+	font-size: 3.5rem;
+}
+.myslide{
+	position: relative;
+}
+.cascade{
+	-webkit-animation-name: pj;
+	-webkit-animation-duration: 1.5s;
+	animation-name: pj;
+	animation-duration: 1.5s;
+}
+@keyframes pj{
+	from{
+		opacity: 0.5;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+/*End of About Section*/
+
+/*Services Section*/
+#services{
+
+	padding: 160px 40px 40px 40px;
+	height: auto;
+    background:#eeb;
+    width: 100vw;
+
+
+}
+#services h1{
+	margin-bottom: 40px;
+    text-align: center;
+}
+#services h3{
+	text-align: center;
+}
+#services p{
+	text-align: justify;
+
+}
+
+#services img:hover{
+	-webkit-animation-name: x;
+	-webkit-animation-duration: 1.3s;
+	animation-name: x;
+	animation-duration: 1.3s;
+
+}
+@keyframes x{
+	from{
+		padding: 50px;
+		opacity: 0.5;
+		border: solid 0.5px;
+		border-radius: 20px;
+	}
+	to{
+		padding: 0px;
+		opacity: 1;
+	}
+}
+/*End of Service Section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 800px){
+	.menu{
+		flex-direction: column;
+	}
+	.menu li{
+		width: 100vw;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+    .toggle i{
+	display: initial;
+}
+nav{
+	width: 100%;
+	background: currentColor;
+}
+#about{
+	background: #eef;
+	height: auto;
+}
+#services{
+	background: #eeb;
+}
+}
+
